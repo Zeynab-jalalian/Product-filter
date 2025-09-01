@@ -10,7 +10,7 @@ let products = {
       productName: "Red Scarf",
       category: "Scarf",
       price: "30",
-      image: "img/scarf2.webp",
+      image: "img/Scarf2.webp",
     },
     {
       productName: "Black T-Shirt",
