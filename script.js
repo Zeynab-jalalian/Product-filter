@@ -52,5 +52,19 @@ for (let i of products.data) {
   imgContainer.appendChild(image);
   card.appendChild(imgContainer);
 
+  let container = document.createElement("div");
+  container.classList.add("container");
+
+  let name = document.createElement("h5");
+  name.classList.add("product-name");
+  name.innerText = i.productName.toUpperCase();
+  container.appendChild(name);
+
+  let price=document.createElement("h6");
+  price.innerText="$"+i.price;
+  container.appendChild(price);
+
+  card.appendChild(container);
+
   document.getElementById("products").appendChild(card);
 }
